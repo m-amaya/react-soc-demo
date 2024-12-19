@@ -1,21 +1,8 @@
-import { ReactNode } from 'react';
+import { Flex } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 
-export type PageLayoutProps = {
-  children: ReactNode;
-};
-
-function PageLayout({ children }: PageLayoutProps) {
-  return (
-    <div>
-      <header>
-        <h1>Page Title</h1>
-      </header>
-      <main>{children}</main>
-      <footer>
-        <p>Footer content</p>
-      </footer>
-    </div>
-  );
-}
-
-export default PageLayout;
+export const PageLayout = styled(Flex)`
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+`;

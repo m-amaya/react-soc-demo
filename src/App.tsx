@@ -1,16 +1,12 @@
-import { Box, Heading } from '@chakra-ui/react';
-import { Button } from './components/cogs';
+import { PageLayout } from '@/components/page-layout';
+import { Sidebar } from '@/components/sidebar';
 
 function App() {
   return (
-    <>
-      <Heading as="h1" size="2xl">
-        Hello world!
-      </Heading>
-      <Box>
-        <Button>Example</Button>
-      </Box>
-    </>
+    <PageLayout>
+      <Sidebar />
+      <div>content</div>
+    </PageLayout>
   );
 }
 
