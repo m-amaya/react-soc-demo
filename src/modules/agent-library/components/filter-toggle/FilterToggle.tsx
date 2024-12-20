@@ -1,3 +1,5 @@
+import { SegmentedToggle } from '@/components/segmented-toggle';
+
 export function FilterToggle() {
-  return <div>filter toggle</div>;
+  return <SegmentedToggle labels={['My agents', 'Published agents']} />;
 }

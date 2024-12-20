@@ -10,7 +10,7 @@ import { ModalBody, ModalFooter, ModalHeader } from './components';
 
 export function AgentBuilderModal() {
   return (
-    <DialogRoot size="full">
+    <DialogRoot scrollBehavior="inside" size="full">
       <DialogTrigger asChild>
         <Button icon={<PlusIcon size={16} />}>Create agent</Button>
       </DialogTrigger>
